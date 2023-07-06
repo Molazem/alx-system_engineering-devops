@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R u=rwx,go=r-x ./*
+find . -type d ! -path "./.*" -exec chmod +x {} \
